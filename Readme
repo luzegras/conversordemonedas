@@ -1,0 +1,2 @@
+Conversor de Monedas en Java
+Este proyecto es un Conversor de Monedas desarrollado en Java que permite convertir cantidades entre diferentes divisas. Es una aplicación simple que utiliza tasas de cambio definidas por  Exchange (API) en tiempo real.
