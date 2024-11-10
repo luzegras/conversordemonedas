@@ -105,7 +105,7 @@ public class UI {
         // Opción para salir
         if (monedaSeleccionada == (i + 1)) {
             System.out.println("Gracias por usar el Conversor de Monedas Alura Challenge, ¡Hasta la vista, BABY!");
-            continuar = false;  // Detiene el ciclo principal
+            continuar = false;
             return;
         }
 
