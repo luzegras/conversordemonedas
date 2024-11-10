@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class ApiMonedasHttpclient {
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/5c793fb38af441f5483837c0/latest/USD";
-    private HttpClient client = HttpClient.newHttpClient();
+    private final HttpClient client = HttpClient.newHttpClient();
 
     public JsonObject obtenerTasasDeCambio() throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(API_URL)).build();
