@@ -121,7 +121,7 @@ public class Main {
                         if (monedaSeleccionada >= 1 && monedaSeleccionada <= monedascode.size()) {
                             String[] monedas = monedascode.keySet().toArray(new String[0]);
                             String monedaSeleccionadaCodigo = monedas[monedaSeleccionada - 1];
-                            String converterStr = "";
+                            String converterStr;
                             if (opcion == 1){ converterStr = "USD";}else{converterStr = monedaSeleccionadaCodigo;}
                             System.out.print("Introduce la cantidad a convertir en "+ converterStr +": ");
                             double cantidad = scanner.nextDouble();
