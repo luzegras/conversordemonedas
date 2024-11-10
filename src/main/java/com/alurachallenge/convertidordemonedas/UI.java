@@ -25,6 +25,8 @@ public class UI {
     }
 
     public void iniciar() {
+
+        //Mostrar Menu
         System.out.println(Colores.YELLOW + "\n[Conversor de Monedas]\n" + Colores.RESET);
 
         try {
@@ -33,7 +35,7 @@ public class UI {
 
             Scanner scanner = new Scanner(System.in);
 
-            while (continuar) {  // Aquí se usa la variable continuar
+            while (continuar) {  // Menu Principal
                 System.out.println("\nElige una opción para convertir:");
                 System.out.println(Colores.GREEN + "1. Convertir USD a tu moneda");
                 System.out.println(Colores.BLUE + "2. Convertir de tu moneda a USD");
@@ -63,6 +65,7 @@ public class UI {
         }
     }
 
+    //Mostrar Tasas
     private void mostrarTasasDeCambio(JsonObject rates) {
         System.out.println(Colores.GREEN + "[Tasa de cambio]");
         for (Map.Entry<String, String> entry : monedascode.entrySet()) {
@@ -74,6 +77,7 @@ public class UI {
         }
     }
 
+    //Convertidor
     private void convertirMoneda(Scanner scanner, JsonObject rates, int opcion) {
 
         System.out.printf( "\nElige Tu moneda" +Colores.BLUE+" (número):\n" + Colores.RESET);
@@ -95,14 +99,14 @@ public class UI {
         // Opción para volver al menú principal
         if (monedaSeleccionada == i) {
             System.out.println("Volviendo al menú principal...");
-            return; // Esto sale del método y vuelve al inicio del ciclo principal
+            return;
         }
 
         // Opción para salir
         if (monedaSeleccionada == (i + 1)) {
             System.out.println("Gracias por usar el Conversor de Monedas Alura Challenge, ¡Hasta la vista, BABY!");
             continuar = false;  // Detiene el ciclo principal
-            return; // Sale del método
+            return;
         }
 
         // Continuar con la selección normal de monedas

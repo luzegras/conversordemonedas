@@ -10,7 +10,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ApiMonedasHttpclient {
+
+    //Conectando  con  la Api
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/5c793fb38af441f5483837c0/latest/USD";
+
+    //Iniciando CLiente HTTP
     private final HttpClient client = HttpClient.newHttpClient();
 
     public JsonObject obtenerTasasDeCambio() throws IOException, InterruptedException {
