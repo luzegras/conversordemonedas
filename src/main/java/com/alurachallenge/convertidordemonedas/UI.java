@@ -12,7 +12,7 @@ public class UI {
     private final ApiMonedasHttpclient apiService = new ApiMonedasHttpclient();
     private final ConversorDeMonedas conversor = new ConversorDeMonedas();
     private final Map<String, String> monedascode = new HashMap<>();
-    private boolean continuar = true;  // Variable mover aquí
+    private boolean continuar = true;
 
     public UI() {
         // Inicializa las monedas disponibles
