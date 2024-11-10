@@ -1,2 +1,40 @@
-Conversor de Monedas en Java
-Este proyecto es un Conversor de Monedas desarrollado en Java que permite convertir cantidades entre diferentes divisas. Es una aplicación simple que utiliza tasas de cambio definidas por  Exchange (API) en tiempo real.
+# Conversor de Monedas - Alura Challenge
+
+Este proyecto  es un Challenge: conversor de monedas creado para  Alura. 
+utilizando Java para interactuar con la API de https://www.exchangerate-api.com. 
+
+La aplicación permite a los usuarios convertir valores de USD a otras monedas o viceversa, además de 
+visualizar las tasas de cambio en tiempo real para una lista específica de monedas.
+
+## Requisitos
+
+1. **Java 11 o superior**: Asegúrate de que tienes Java instalado en tu sistema.
+
+## Configuraciones
+
+1. Clona el repositorio en tu máquina local.
+2. Asegúrate de configurar tu entorno con las dependencias necesarias (en particular, la biblioteca Gson).
+
+
+## Características
+
+- **Conversión de Monedas:** Convierte entre USD y algunas monedas seleccionadas (Filtradas).
+- **Interfaz Interactiva en Consola:** Menú fácil de usar para navegar entre opciones de conversión, seleccionar monedas.
+- **Colores en la Consola:** Cada opción en el menú y los resultados de la conversión se presentan en colores diferentes para mejorar la legibilidad y entendimiento.
+
+
+## Tecnologías
+
+- **Java**: Lenguaje de programación utilizado.
+- **ExchangeRate API**: Fuente de las tasas de cambio.
+- **Gson**: Biblioteca para analizar y manipular JSON.
+
+### Uso
+
+Cuando ejecutas la aplicación, verás opciones de conversión en la consola. Puedes seleccionar:
+
+- `1` para convertir de USD a una moneda de tu elección.
+- `2` para convertir de una moneda a USD.
+- `3` para salir de la aplicación.
+
+Dentro de cada opción de conversión, se te mostrarán opciones de monedas y podrás seleccionar una moneda específica o volver al menú principal.
